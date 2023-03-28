@@ -1,0 +1,86 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700italic);
+* { padding: 0; margin: 0; }
+body { background: #ffffff; font-family: 'Lato', sans-serif; text-transform: uppercase; letter-spacing: 1px;}
+ 
+header {
+    text-align: justify;
+    height: 4em;
+    padding: 2em 5%;
+    background: #00a2ff;
+    color: #fff;
+}
+ 
+header::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+ 
+header > div,
+header > div::before,
+header nav,
+header > div h1 {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+}
+
+A:visited {
+  color: #ffffff; /* Цвет посещенных ссылок */
+ }
+ 
+header > div {
+    height: 100%;
+}
+ 
+header > div::before {
+    content: '';
+    height: 100%;
+}
+ 
+header > div h1 {
+    font-size: 3em;
+    font-style: italic;
+}
+ 
+header nav a {
+    padding: 0 0.6em;
+    white-space: nowrap;
+}
+ 
+header nav a:last-child {
+    padding-right: 0;
+}
+body { text-align: center }
+
+.footer {
+  background-color: #2c3e50;
+   position: fixed;
+   right: 0;
+   bottom: 0;
+   text-align: center; 
+   width: 100%;   
+   font-size: 19px;
+font-weight: bold;
+  color: #fafaff;  
+ }
+
+ 
+@media screen and (max-width: 720px){
+     
+    header {
+        height: auto;
+    }
+     
+    header > div,
+    header > div h1,
+    header nav {
+        height: auto;
+        width: auto;
+        display: block;
+        text-align: center;
+    }
+
+
+     
+}
